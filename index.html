@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link
+      rel="shortcut icon"
+      href="images/weather-app.png"
+      type="image/x-icon"
+    />
+    <!-- -------------Google Fonts--------------- -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!----------------Font Awesome--------------- -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-------------- Main Bootstrap----------->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!--------------- style Css-------------->
+    <link rel="stylesheet" href="css/weather.css" />
+  </head>
+  <body>
+    <div class="weather-body">
+      <div class="container">
+        <h6 class="brand">
+          <img
+            src="images/weather-app.png"
+            class="hambozo-img"
+            alt="img-icon"
+          />
+          the waether
+        </h6>
+
+        <div>
+          <h1 class="temp"></h1>
+          <div class="city-time">
+            <h1 class="name"></h1>
+            <small>
+              <span class="days"></span>
+              -
+              <span class="monthDay"></span>
+              <span class="month"></span>
+            </small>
+          </div>
+
+          <div class="weather-img">
+            <img class="icon" alt="icon" width="50" height="50" />
+            <span class="condition"></span>
+          </div>
+        </div>
+
+        <div
+          class="parent w-75 text-center gap-4 mt-5 d-flex justify-content-between align-items-center"
+        >
+          <div class="nextDay">
+            <div class="header">
+              <span class="day"></span>
+            </div>
+
+            <div class="nextDay-content">
+              <div class="icon">
+                <img class="hamadaIcon" alt="" width="50" height="50" />
+              </div>
+
+              <div class="degree fs-3 mt-3"></div>
+              <small class="smallDegree fs-5"></small>
+              <div class="custom my-3"></div>
+            </div>
+          </div>
+
+          <div class="nextDayAfter">
+            <div class="header">
+              <span class="dayAfterTomorrow"></span>
+            </div>
+
+            <div class="nextDay-content">
+              <div class="icon">
+                <img class="iconAfterTomorrow" alt="" width="50" height="50" />
+              </div>
+
+              <div class="degreeAfterTomorrow fs-3 mt-3"></div>
+              <small class="smallDegreeAfterTomorrow fs-5"></small>
+              <div class="customAfter my-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div>
+          <input type="text" class="search" placeholder="Search Location..." />
+          <button type="submit" class="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
+        <ul class="cities">
+          <li class="city">Cairo</li>
+          <li class="city">New York</li>
+          <li class="city">Moscow</li>
+          <li class="city">Paris</li>
+          <li class="btnLocation text-center">
+            <button class="btn btn-danger">
+              My Location <i class="fa-solid fa-house-chimney fa-bounce"></i>
+            </button>
+          </li>
+        </ul>
+
+        <ul class="detalis">
+          <h4>Weather Deatalis <i class="fa-solid fa-temperature-high fa-beat-fade"></i></h4>
+
+          <li>
+            <span>Cloudy</span>
+            <span class="cloud"></span>
+          </li>
+          <li>
+            <span>Humidity</span>
+            <span class="humidity"></span>
+          </li>
+          <li>
+            <span>Wind Speed</span>
+            <span class="wind"></span>
+          </li>
+        </ul>
+
+        <div class="footer text-center  ">
+          Made By❤️<a href="https://www.linkedin.com/in/mohamed-kamal-frontend/" target="_blank">Mohamed Kamal</a>  
+        </div>
+      </div>
+
+
+      <div class="layerTop"></div>
+      <div class="layerBottom"></div>
+      <div class="layerLoading"></div>
+
+
+
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
